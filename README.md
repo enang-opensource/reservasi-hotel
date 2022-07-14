@@ -1,63 +1,54 @@
-# CodeIgniter 4 Application Starter
+# Reservasi Hotel Website 
+Aplikasi reservasi hotel adalah sebuah aplikasi yang saya buat untuk melakukan pemesanan/booking online untuk memesan kamar pada sebuah hotel internal yang terdaftar pada aplikasi. Aplikasi ini juga memiliki fiture chat (Tidak Realtime) dan juga terintegrasi dengan Midtrans sebagai Payment Gateway pembayaran secara online menggunakan beberapa tipe pembayaran. berikut sepesifikasi aplikasi reservasi hotel.
 
-## What is CodeIgniter?
+* Menggunakan Bahasa Pemerograman PHP
+* Menggunakan framework Codeigniter4 (Requitmen PHP 7.4 - 8.0)
+* Terintegrasi dengan Midtrans
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](http://codeigniter.com).
+Berikut fiture yang tersedia pada aplikasi hotel website,
 
-This repository holds a composer-installable app starter.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+* Kelola Kamar
+* Kelola Chat
+* Kelola Pemesanan dan Pembayaran
+* Transaksi Pembayaran dan Pemesanan
+* Chat admin dan costumer
+* check kamar tersedia
+* Page Tentang, Fasilitas, Login dan Register
 
-More information about the plans for version 4 can be found in [the announcement](http://forum.codeigniter.com/thread-62615.html) on the forums.
+Untuk Request database dan sumbangan bisa menghubungi mdhiftaa@gmail.com
 
-The user guide corresponding to this version of the framework can be found
-[here](https://codeigniter4.github.io/userguide/).
+Berikut tampilan aplikasi Reservasi Hotel
 
-## Installation & updates
+# Landing Page
 
-`composer create-project codeigniter4/appstarter` then `composer update` whenever
-there is a new release of the framework.
+* Home Page
+![home-page](https://user-images.githubusercontent.com/53687992/178911324-2d2ef0e6-e9c3-491e-9731-f39b3388ef86.PNG)
 
-When updating, check the release notes to see if there are any changes you might need to apply
-to your `app` folder. The affected files can be copied or merged from
-`vendor/codeigniter4/framework/app`.
+* Chat Page
+![chat-home](https://user-images.githubusercontent.com/53687992/178911312-f3e9c4e8-2176-4924-b757-2d0fcd189538.PNG)
 
-## Setup
+* Kamar Page
+![kamar-page-1](https://user-images.githubusercontent.com/53687992/178911345-d733f089-109a-4cab-8ac2-ca227d5d105a.PNG)
+![kmar-page-2](https://user-images.githubusercontent.com/53687992/178911370-96a7a258-14a6-4720-ba20-a1b54960a680.PNG)
 
-Copy `env` to `.env` and tailor for your app, specifically the baseURL
-and any database settings.
+* Pemesanan kamar
+![pesan-kamar-none-midtrans](https://user-images.githubusercontent.com/53687992/178911376-a0a9f4ae-d65d-4405-9918-b158ac7673b3.PNG)
+![pesan-kamarr](https://user-images.githubusercontent.com/53687992/178911394-8c7e6596-7518-4414-b80b-459fb6cfcefd.PNG)
 
-## Important Change with index.php
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+# Admin Page
+* Admin Dashboard 
+![admin-dashboard](https://user-images.githubusercontent.com/53687992/178911681-e812a6ef-1594-4f8b-839d-de5450a35f4a.PNG)
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+* Admin Kelola Kamar
+![admin-add-kamar](https://user-images.githubusercontent.com/53687992/178911670-987d125c-1892-409f-b41c-e1b2afd86b02.PNG)
 
-**Please** read the user guide for a better explanation of how CI4 works!
+* Admin Kelola Chat
+![admin-chat](https://user-images.githubusercontent.com/53687992/178911678-2d76f806-1e90-41af-a086-6ca27f34034b.PNG)
 
-## Repository Management
+* Admin Laporan dan Pemesanan
+![admin-pembayaran](https://user-images.githubusercontent.com/53687992/178911689-16818eea-b049-4dee-9b37-58d357d24067.PNG)
+![admin-pemesanan](https://user-images.githubusercontent.com/53687992/178911691-8486528b-1fc2-49b8-9293-c3995c6506cf.PNG)
 
-We use Github issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
-
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
-
-## Server Requirements
-
-PHP version 7.3 or higher is required, with the following extensions installed:
-
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
-
-Additionally, make sure that the following extensions are enabled in your PHP:
-
-- json (enabled by default - don't turn it off)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php)
-- xml (enabled by default - don't turn it off)
+* Kelola Laporan
+![admin-laporan](https://user-images.githubusercontent.com/53687992/178911684-d79b94ee-aee4-4d6c-b405-195628bc2881.PNG)
